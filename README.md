@@ -1,4 +1,4 @@
-
+![Todo List Preview](./App-Picture.png)
 
 # Todo List 📝
 
