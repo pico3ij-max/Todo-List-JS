@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List with Drag & Drop</title>
+    <link rel="stylesheet" href="./css/Todo-list-Drag&Drop.css">
+</head>
+<body>
+    <div>
+        <h1>تودولیست <span class="keyword">VIP</span></h1>
+        <button type="button" class="addtodo">+ ایجاد</button>
+    </div>
+
+    <section class="container">
+
+        <section class="carryout" ondrop="ondrophandler(event)" ondragover="ondragoverhandler(event)">
+            <header draggable="false" class="black">برای انجام</header>
+            <article id="todo-${randomId}" draggable="true" ondragstart="ondragstarthandler(event)">
+                <p>یادگیری جاوااسکریپت</p>
+            </article>
+        </section>
+        <section ondrop="ondrophandler(event)" ondragover="ondragoverhandler(event)">
+            <header draggable="false" class="orange">درحال انجام</header>
+        </section>
+        <section ondrop="ondrophandler(event)" ondragover="ondragoverhandler(event)">
+            <header draggable="false" class="lightgreen">تکمیل</header>
+        </section>
+        <section ondrop="ondrophandler(event)" ondragover="ondragoverhandler(event)">
+            <header draggable="false" class="red">هرزنامه</header>
+        </section>
+        
+    </section>
+
+    <section class="overlay hide">
+        <div class="add-todo">
+            <input type="text" id="new-todo" placeholder="لطفا کار جدید را وارد کنید🙂">
+            
+            <div class="btns">
+                <button type="button" class="add">اضافه کن</button>
+                <button type="button" class="cancel">برگشت</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="./app.JS/Todo-list-Drag&Drop.js"></script>
+</body>
+</html>
