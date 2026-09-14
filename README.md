@@ -1,3 +1,5 @@
+![Todo List Preview](./App-Picture.png)
+
 # Todo List 📝
 
 A Todo List project built while learning JavaScript.
